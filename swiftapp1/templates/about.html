@@ -97,7 +97,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{% static 'assets/img/about.jpg' %}" style="width: 500px; height: 400px;" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/about.jpg' %}" style="width: 500px; height: 400px; border-radius: 10px;" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
             <h3>Empowering Your Style, One Fabric at a Time</h3>
@@ -173,7 +173,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
+          <a href="{%  url 'home' %}" class="d-flex align-items-center">
             <span class="sitename">Eterna</span>
           </a>
           <div class="footer-contact pt-3">

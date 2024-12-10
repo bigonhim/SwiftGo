@@ -52,7 +52,7 @@
     <div class="branding">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="{% url 'home' %}" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename">SwiftGo<br></h1>
@@ -168,7 +168,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="{% static 'assets/img/about2.jpg' %}" style="width: 500px; height: 400px;" class="img-fluid" alt="">
+            <img src="{% static 'assets/img/about2.jpg' %}" style="width: 500px; height: 400px;border-radius: 10px;" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
             <h3>Why SwiftGo</h3>

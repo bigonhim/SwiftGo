@@ -81,7 +81,7 @@
       <div class="container">
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="{%  url 'home' %}">Home</a></li>
             <li class="current">Materials</li>
           </ol>
         </nav>
@@ -98,7 +98,7 @@
             {% for material in materials   %}
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item ">
                 <div class="portfolio-content h-100">
-                    <img src="{{ material.image.url }}" class="img-fluid" alt="{{ material.name }}">
+                    <img src="{{ material.image.url }}" style="height: 500px; width: 500px ; border-radius: 10px;"   class="img-fluid" alt="{{ material.name }}">
                   <div class="portfolio-info">
                     <h4>{{material.name}}</h4>
                     <p>Ksh {{material.price}}</p>
